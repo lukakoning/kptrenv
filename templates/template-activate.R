@@ -1,3 +1,11 @@
+lib_root <- paste0(
+  "C:/renv_libs/", gsub(":", "", getwd())
+)
+Sys.setenv(
+  RENV_PATHS_LIBRARY_ROOT = lib_root,
+  RENV_PATHS_LIBRARY_STAGING = paste0(lib_root, "/staging/"),
+  RENV_PATHS_LIBRARY = paste0(lib_root, "/lib/")
+)
 
 local({
 

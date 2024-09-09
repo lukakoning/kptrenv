@@ -1,4 +1,4 @@
-library(kptrenv)
+library(renv)
 
 lib_root <- paste0(
   "C:/renv_libs/", gsub(":", "", getwd())

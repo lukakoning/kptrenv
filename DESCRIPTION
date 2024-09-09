@@ -1,4 +1,4 @@
-Package: kptrenv
+Package: renv
 Type: Package
 Title: Project Environments
 Version: 1.0.7.9000

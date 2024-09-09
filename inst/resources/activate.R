@@ -1,7 +1,7 @@
 library(renv)
 
 lib_root <- paste0(
-  "C:/renv_libs/", gsub(":", "", getwd())
+  "C:/renv_libs/", getwd() |> digest::digest(algo = "sha1")
 )
 Sys.setenv(
   RENV_PATHS_LIBRARY_ROOT = lib_root,

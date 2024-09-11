@@ -104,8 +104,8 @@ local({
   library(utils, lib.loc = .Library)
 
   # unload renv if it's already been loaded
-  if ("renv" %in% loadedNamespaces())
-    unloadNamespace("renv")
+  # if ("renv" %in% loadedNamespaces())
+    # unloadNamespace("renv")
 
   # load bootstrap tools   
   ansify <- function(text) {
@@ -263,7 +263,7 @@ local({
   }
   
   renv_bootstrap_repos <- function() {
-  
+    
     # get CRAN repository
     cran <- getOption("renv.repos.cran", "https://cloud.r-project.org")
   
@@ -1150,7 +1150,7 @@ local({
   renv_bootstrap_run <- function(version, libpath) {
   
     # perform bootstrap
-    bootstrap(version, libpath)
+    # bootstrap(version, libpath)
   
     # exit early if we're just testing bootstrap
     if (!is.na(Sys.getenv("RENV_BOOTSTRAP_INSTALL_ONLY", unset = NA)))
